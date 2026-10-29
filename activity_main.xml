@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTitre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Café Express"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSousTitre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Prise de commande"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitre" />
+
+    <TextView
+        android:id="@+id/txtNomCafe"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="Café"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtSousTitre" />
+
+    <TextView
+        android:id="@+id/txtPrixCafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 DH"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomCafe"
+        app:layout_constraintStart_toEndOf="@id/txtNomCafe"
+        app:layout_constraintTop_toTopOf="@id/txtNomCafe" />
+
+    <Button
+        android:id="@+id/btnMoinsCafe"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomCafe"
+        app:layout_constraintEnd_toStartOf="@id/txtQteCafe"
+        app:layout_constraintTop_toTopOf="@id/txtNomCafe" />
+
+    <TextView
+        android:id="@+id/txtQteCafe"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomCafe"
+        app:layout_constraintEnd_toStartOf="@id/btnPlusCafe"
+        app:layout_constraintTop_toTopOf="@id/txtNomCafe" />
+
+    <Button
+        android:id="@+id/btnPlusCafe"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomCafe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtNomCafe" />
+
+    <TextView
+        android:id="@+id/txtNomThe"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="Thé"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNomCafe" />
+
+    <TextView
+        android:id="@+id/txtPrixThe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8 DH"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomThe"
+        app:layout_constraintStart_toEndOf="@id/txtNomThe"
+        app:layout_constraintTop_toTopOf="@id/txtNomThe" />
+
+    <Button
+        android:id="@+id/btnMoinsThe"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomThe"
+        app:layout_constraintEnd_toStartOf="@id/txtQteThe"
+        app:layout_constraintTop_toTopOf="@id/txtNomThe" />
+
+    <TextView
+        android:id="@+id/txtQteThe"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomThe"
+        app:layout_constraintEnd_toStartOf="@id/btnPlusThe"
+        app:layout_constraintTop_toTopOf="@id/txtNomThe" />
+
+    <Button
+        android:id="@+id/btnPlusThe"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomThe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtNomThe" />
+
+    <TextView
+        android:id="@+id/txtNomCroissant"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="Croissant"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNomThe" />
+
+    <TextView
+        android:id="@+id/txtPrixCroissant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6 DH"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomCroissant"
+        app:layout_constraintStart_toEndOf="@id/txtNomCroissant"
+        app:layout_constraintTop_toTopOf="@id/txtNomCroissant" />
+
+    <Button
+        android:id="@+id/btnMoinsCroissant"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomCroissant"
+        app:layout_constraintEnd_toStartOf="@id/txtQteCroissant"
+        app:layout_constraintTop_toTopOf="@id/txtNomCroissant" />
+
+    <TextView
+        android:id="@+id/txtQteCroissant"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomCroissant"
+        app:layout_constraintEnd_toStartOf="@id/btnPlusCroissant"
+        app:layout_constraintTop_toTopOf="@id/txtNomCroissant" />
+
+    <Button
+        android:id="@+id/btnPlusCroissant"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="0dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="@id/txtNomCroissant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/txtNomCroissant" />
+
+    <TextView
+        android:id="@+id/txtLabelNom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Nom du client"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtNomCroissant" />
+
+    <EditText
+        android:id="@+id/edtNom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Ex. : Salma"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtLabelNom" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Total : 0 DH"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btnVider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtNom" />
+
+    <Button
+        android:id="@+id/btnVider"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Vider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btnCommander"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCommander"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Commander"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintStart_toEndOf="@id/btnVider" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
