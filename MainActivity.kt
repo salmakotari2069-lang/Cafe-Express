@@ -2,6 +2,7 @@ package com.example.cf
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -82,6 +83,12 @@ class MainActivity : AppCompatActivity() {
             if (qteCroissant > 0) qteCroissant--
             txtQteCroissant.text = qteCroissant.toString()
             afficherTotal()
+        }
+
+        val btnMenu: Button = findViewById(R.id.btnmenu)
+        btnMenu.setOnClickListener {
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
         }
 
         btnCommander.setOnClickListener {
